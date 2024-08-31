@@ -3,14 +3,11 @@ const path = require('path');
 
 const app = express();
 
-// Configuración de EJS como motor de plantillas
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
-// Configuración de carpeta pública para archivos estáticos (CSS, JS, imágenes)
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Definición de rutas
 app.get('/', (req, res) => {
     res.render('index');
 });
@@ -39,7 +36,6 @@ app.get('/contacto', (req, res) => {
     res.render('contacto');
 });
 
-// Configuración del puerto
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log(`Servidor ejecutándose en http://localhost:${PORT}`);
