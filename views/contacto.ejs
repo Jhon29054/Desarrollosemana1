@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IKOMI PERU - Contacto</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>IKOMI PERU</h1>
+        <nav>
+            <a href="/">Inicio</a>
+            <a href="/nosotros">Nosotros</a>
+            <a href="/servicios">Servicios</a>
+            <a href="/producto">Producto</a>
+            <a href="/marcas">Marcas</a>
+            <a href="/contacto">Contacto</a>
+        </nav>
+    </header>
+    <main>
+        <h2>Contacto</h2>
+        <form action="/contacto" method="post" class="contact-form">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Escribe tu email" required>
+            </div>
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Enviar</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 IKOMI PERU</p>
+    </footer>
+</body>
+</html>
+
